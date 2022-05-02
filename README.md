@@ -54,6 +54,7 @@ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 ```
 # Installing other OpenPose prerequisites
 ```
+conda create -n openpose python=3.7 -y
 sudo apt-get install libopencv-dev
 mkdir openpose_folder
 In openpose_folder git clone OpenPose
@@ -97,6 +98,9 @@ sudo make install
 ```
 cd openpose/build/examples/tutorial_api_python
 python3 01_body_from_image.py
+
+For Python API error: Cannot import name pyopenpose
+https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1027
 
 ```
 
